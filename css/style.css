@@ -48,6 +48,9 @@ a {
   padding: 10px;
 }
 
+.u-actions-inline li:hover {
+  background-color: #333;
+}
 
 .u-actions-inline a {
   display: flex;
@@ -58,6 +61,10 @@ a {
 .u-actions-inline i {
   font-size: 20px;
   margin-bottom: 3px;
+}
+
+.u-colorGreen {
+  color: green;
 }
 
 /* Application */
@@ -150,11 +157,19 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 70px;
+  background-color: #222;
 }
 
 .destroy-meeting a {
   color: red;
   padding: 10px;
   font-size: 14px;
+}
+
+.destroy-meeting a:hover {
+  color: pink;
+}
+
+.central-actions li:not(:last-child) {
+  margin-right: 5px;
 }
