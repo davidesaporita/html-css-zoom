@@ -12,6 +12,13 @@ body {
   font-size: 12px;
 }
 
+/* Typography */
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
 /* Utilities */
 .button {
   border-radius: 3px;
@@ -30,6 +37,27 @@ body {
 
 .button--top {
   background: linear-gradient(0deg,#222,#444);
+}
+
+.u-actions-inline {
+  display: flex;
+  list-style: none;
+}
+
+.u-actions-inline li {
+  padding: 10px;
+}
+
+
+.u-actions-inline a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.u-actions-inline i {
+  font-size: 20px;
+  margin-bottom: 3px;
 }
 
 /* Application */
@@ -121,4 +149,12 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+.destroy-meeting a {
+  color: red;
+  padding: 10px;
+  font-size: 14px;
 }
