@@ -1,5 +1,66 @@
+/* General */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  background-color: #555;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+}
+
+/* Utilities */
+
+
+/* Application */
+#app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+/* DEBUG */
+#main-window > div {
+  background-color: red;
+}
+
+/* Top bar*/
+#top-bar {
+  width: 100%;
+  padding: 12px 15px 25px;
+}
+
+.users-online::after {
+  content: '';
+  display: inline-block;
+  border: 4px solid transparent;
+  border-top-color: #fff;
+  margin-left: 5px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+/* Main */
+#main-window {
+  flex-grow: 1;
+  display: flex;
+  flex-flow: row wrap;
+  width: 1170px;
+}
+
+.user {
+  flex-basis: 25%;
+  border: 3px solid #000;
+}
+
+/* Actions bar */
+#actions-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
